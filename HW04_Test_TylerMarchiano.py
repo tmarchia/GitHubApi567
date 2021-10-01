@@ -27,15 +27,14 @@ class TestGitHub(unittest.TestCase):
     #Test ID 4
     def testGitHubRepos4(self): 
         self.assertEqual(getGitHubRepos('tmarchiaaaa'), 'User ID was not found')
-    """
+        
     #Test ID 5
     def testGitHubRepoCommits1(self): 
-        self.assertEqual(getGitHubRepoCommits('tmarchia', 'Student-Repository'), NUMBER)
+        self.assertEqual(getGitHubRepoCommits('tmarchia', 'Student-Repository'), 16)
     
     #Test ID 6
     def testGitHubRepoCommits1(self): 
-        self.assertEqual(getGitHubRepoCommits('richkempinski', 'hellogitworld'), NUMBER)
-    """
+        self.assertEqual(getGitHubRepoCommits('richkempinski', 'hellogitworld'), 30)
 
 if __name__ == '__main__':
     print('Running unit tests')
