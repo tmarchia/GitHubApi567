@@ -35,7 +35,7 @@ def getGitHubRepoCommits(userID, repo):
 
 def main() -> None:
     '''Main function that prompts user for the GitHub User ID'''
-    userID: str = input('Please enter a GitHub User ID: ')
+    userID = input('Please enter a GitHub User ID: ')
     print()
     
     repositoryResult = getGitHubRepos(userID)
